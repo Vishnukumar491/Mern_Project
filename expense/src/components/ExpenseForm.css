@@ -1,0 +1,69 @@
+.expense-form-container {
+    background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .form-title {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+  }
+  
+  .expense-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--text-color);
+  }
+  
+  .friends-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    max-height: 200px;
+    overflow-y: auto;
+    padding: 10px;
+    border: 1px solid var(--medium-gray);
+    border-radius: var(--border-radius);
+  }
+  
+  .friend-item {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    border-radius: 4px;
+  }
+  
+  .friend-item:hover {
+    background-color: var(--light-gray);
+  }
+  
+  .friend-label {
+    margin-left: 8px;
+    cursor: pointer;
+  }
+  
+  .no-friends-message {
+    color: var(--dark-gray);
+    font-style: italic;
+    padding: 10px;
+    border: 1px dashed var(--medium-gray);
+    border-radius: var(--border-radius);
+  }
+  
+  .submit-button {
+    align-self: flex-start;
+    margin-top: 10px;
+  }

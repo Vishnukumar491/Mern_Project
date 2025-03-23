@@ -1,0 +1,173 @@
+.expense-list-container {
+    margin-top: 30px;
+  }
+  
+  .expense-tabs {
+    display: flex;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--medium-gray);
+  }
+  
+  .tab-button {
+    padding: 12px 20px;
+    background: none;
+    border: none;
+    border-bottom: 3px solid transparent;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--dark-gray);
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .tab-button.active {
+    color: var(--primary-color);
+    border-bottom-color: var(--primary-color);
+  }
+  
+  .expense-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  @media (min-width: 768px) {
+    .expense-list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  .expense-card {
+    background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    padding: 20px;
+  }
+  
+  .expense-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .expense-title {
+    font-size: 1.2rem;
+    margin: 0;
+    color: var(--text-color);
+  }
+  
+  .expense-status {
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 4px 8px;
+    border-radius: 12px;
+  }
+  
+  .expense-status.pending {
+    background-color: var(--warning-color);
+    color: #856404;
+  }
+  
+  .expense-status.settled {
+    background-color: var(--success-color);
+    color: white;
+  }
+  
+  .expense-description {
+    color: var(--dark-gray);
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+  }
+  
+  .expense-details {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: var(--light-gray);
+    border-radius: var(--border-radius);
+  }
+  
+  .expense-amount, .expense-date, .expense-creator {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .label {
+    font-weight: 600;
+    color: var(--dark-gray);
+  }
+  
+  .value {
+    color: var(--text-color);
+  }
+  
+  .expense-participants h4 {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: var(--text-color);
+  }
+  
+  .participants-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .participant-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid var(--light-gray);
+  }
+  
+  .participant-item:last-child {
+    border-bottom: none;
+  }
+  
+  .participant-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .participant-name {
+    font-weight: 600;
+  }
+  
+  .participant-amount {
+    color: var(--dark-gray);
+    font-size: 0.9rem;
+  }
+  
+  .paid-status {
+    color: var(--success-color);
+    font-weight: 600;
+  }
+  
+  .remind-button {
+    font-size: 0.8rem;
+    padding: 5px 10px;
+  }
+  
+  .pay-button {
+    width: 100%;
+    margin-top: 15px;
+  }
+  
+  .no-expenses-message {
+    grid-column: 1 / -1;
+    color: var(--dark-gray);
+    font-style: italic;
+    padding: 20px;
+    text-align: center;
+    border: 1px dashed var(--medium-gray);
+    border-radius: var(--border-radius);
+  }
+  
+  .loading {
+    text-align: center;
+    padding: 20px;
+    color: var(--dark-gray);
+  }

@@ -1,0 +1,88 @@
+.friends-container {
+    background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .friends-title {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+  }
+  
+  .add-friend-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .add-friend-input {
+    flex: 1;
+    margin-bottom: 0;
+  }
+  
+  .friends-list-container {
+    margin-top: 20px;
+  }
+  
+  .friends-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .friend-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid var(--light-gray);
+  }
+  
+  .friend-item:last-child {
+    border-bottom: none;
+  }
+  
+  .friend-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .friend-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  .friend-name {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+  }
+  
+  .friend-email {
+    color: var(--dark-gray);
+    font-size: 0.9rem;
+  }
+  
+  .remove-friend-button {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+  
+  .no-friends-message {
+    color: var(--dark-gray);
+    font-style: italic;
+    padding: 20px;
+    text-align: center;
+    border: 1px dashed var(--medium-gray);
+    border-radius: var(--border-radius);
+  }

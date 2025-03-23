@@ -1,0 +1,110 @@
+.history-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .history-container {
+    background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    padding: 30px;
+  }
+  
+  .expense-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .timeline-item {
+    display: flex;
+    gap: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--light-gray);
+  }
+  
+  .timeline-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  
+  .timeline-date {
+    min-width: 100px;
+    padding-top: 5px;
+    color: var(--dark-gray);
+    font-weight: 600;
+  }
+  
+  .timeline-content {
+    flex: 1;
+  }
+  
+  .timeline-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .timeline-title {
+    font-size: 1.2rem;
+    margin: 0;
+    color: var(--text-color);
+  }
+  
+  .timeline-status {
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 4px 8px;
+    border-radius: 12px;
+  }
+  
+  .timeline-status.pending, .timeline-status.unpaid {
+    background-color: var(--warning-color);
+    color: #856404;
+  }
+  
+  .timeline-status.settled, .timeline-status.paid {
+    background-color: var(--success-color);
+    color: white;
+  }
+  
+  .timeline-description {
+    color: var(--dark-gray);
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+  }
+  
+  .timeline-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--light-gray);
+    padding: 10px;
+    border-radius: var(--border-radius);
+  }
+  
+  .timeline-role {
+    font-size: 0.9rem;
+    color: var(--dark-gray);
+  }
+  
+  .timeline-amount {
+    font-weight: 600;
+  }
+  
+  .no-expenses-message {
+    color: var(--dark-gray);
+    font-style: italic;
+    padding: 20px;
+    text-align: center;
+    border: 1px dashed var(--medium-gray);
+    border-radius: var(--border-radius);
+  }
+  
+  .loading {
+    text-align: center;
+    padding: 40px;
+    color: var(--dark-gray);
+  }
