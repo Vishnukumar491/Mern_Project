@@ -29,6 +29,7 @@
   
   .friends-list {
     list-style: none;
+    display: block;
     padding: 0;
   }
   

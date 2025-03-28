@@ -16,7 +16,8 @@ app.use(cors());
 app.use(express.json());
 
 // MongoDB Connection
-mongoose.connect('mongodb://localhost:27017/expenseSplitter')
+mongoose.connect('mongodb+srv://vishnukumarm336:Vishnu2006@split.yodxbvg.mongodb.net/?retryWrites=true&w=majority&appName=split')
+
   .then(() => console.log('Connected to MongoDB'))
   .catch(err => console.error('MongoDB connection error:', err));
 
