@@ -16,17 +16,24 @@ app.use(cors());
 app.use(express.json());
 
 // MongoDB Connection
-mongoose.connect('mongodb+srv://vishnukumarm336:Vishnu2006@split.yodxbvg.mongodb.net/?retryWrites=true&w=majority&appName=split')
-
+mongoose.connect(process.env.MONGO_URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+})
   .then(() => console.log('Connected to MongoDB'))
   .catch(err => console.error('MongoDB connection error:', err));
 
-// Routes
+// Default Route
+app.get('/', (req, res) => {
+  res.send('Backend is running successfully!');
+});
+
+// API Routes
 app.use('/api/users', userRoutes);
 app.use('/api/expenses', expenseRoutes);
 app.use('/api/friends', friendRoutes);
 
-// Error handling middleware
+// Error Handling
 app.use((err, req, res, next) => {
   console.error(err.stack);
   res.status(500).json({ message: 'Something went wrong!' });
